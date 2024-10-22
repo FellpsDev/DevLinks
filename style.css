@@ -20,7 +20,7 @@
 
 .light{
   --text-color: #000000;
-  --bg-url: url(./assets/img/bg-desktop-light.jpg) no-repeat;
+  --bg-url: url(./assets/bg-desktop-light.jpg) no-repeat;
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color-light-mode: rgba(0, 0, 0, 0.05);
   --surface-color-light-mode-hover: rgba(0, 0, 0, 0.02);
