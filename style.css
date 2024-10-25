@@ -20,7 +20,7 @@
 
 .light{
   --text-color: #000000;
-  --bg-url: url(./assets/bg-desktop-light.jpg) no-repeat;
+  --bg-url: url(/assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color-light-mode: rgba(0, 0, 0, 0.05);
   --surface-color-light-mode-hover: rgba(0, 0, 0, 0.02);
@@ -29,7 +29,8 @@
 }
 
 body {
-  background: var(--bg-url) top center/cover;
+  background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 .container {
@@ -164,4 +165,14 @@ ul li a:hover {
   text-align: center;
   font-size: 14px;
   
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light{
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
